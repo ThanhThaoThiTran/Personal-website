@@ -1,23 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import profil from "./bilde.jpg";
+import "./App.css";
+import Link from "./Link";
 
 function App() {
+  let teller = 0;
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+        <img src={profil} className="App-logo" alt="logo" />
+        <p>Thanh Thao Thi Tran</p>
+        {/* {"Antall kjærester: " + (teller + 5)} */}
+
+        {/* Legger til linker */}
+        <Link
+          link={"https://www.linkedin.com/in/thanh-thao-thi-tran-27367a15b/"}
         >
-          Learn React
-        </a>
+          LinkedIn
+        </Link>
+        <Link link={"https://github.com/ThanhThaoThiTran"}>Github</Link>
       </header>
     </div>
   );
