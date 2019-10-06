@@ -18,9 +18,20 @@
 }
 
 .App-link {
-  color: #09d3ac;
+  color: white;
+  margin: 50px 20px;
+}
+
+.App-link:hover {
+  color: cyan;
 }
 
 img {
   border-radius: 50%;
+}
+
+/* Legger linkene på siden, ikke oppå hverandre */
+.flex-container {
+  display: flex;
+  flex-direction: row;
 }
